@@ -1,0 +1,25 @@
+This module is a new application to add to the existing
+applications available in the 1-Wire Public Domain Kit.
+This application along with new support modules is for 
+accessing and controling the DS2408.  A list of options 
+will be provided when the program starts and finds the 
+first DS2408.  The following is a list of the new software
+modules.  Also provided is a list of the standard
+modules needed to create a new project:
+
+New application files:
+
+swtmulti.c  -  New application to access and controll
+               the DS2408.
+swt29.c     -  Utility functions for the DS2408.
+swt29.h     -  DS2408 utility functions header file
+
+Required standard 1-Wire Public Domain Kit files:
+
+crcutil.c          findtype.c           owerr.c
+
+The application also requires a set of link files.  For 
+example the following is a list of the userial link files:
+
+ds2480ut.c         owllu.c              ownetu.c
+owsesu.c           owtrnu.c             win32lnk.c
